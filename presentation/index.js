@@ -27,6 +27,7 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
+  lq: require("../assets/cover_lq.jpg"),
   city: require("../assets/city.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
@@ -358,12 +359,6 @@ export default class Presentation extends React.Component {
           <Heading size="1.3em" textColor="tertiary" bold>Find more on the <Link href="http:://crates.io">crates.io</Link></Heading>
         </Slide>
 
-
-        <Slide transition={["zoom", "slide"]}>
-          <Heading size="1.3em" textColor="tertiary" bold>Find more on the crates.io</Heading>
-          <Image src="https://d1ro8r1rbfn3jf.cloudfront.net/ms_109169/GdBI70EDroKV13nlndv2qk0kCQOoGa/Cargo%253A%2Bpackages%2Bfor%2BRust%2B%25F0%259F%2594%258A%2B2017-10-26%2B14-02-18.png?Expires=1509102150&Signature=eV1e1lnjnr1xte5GtdWTDzvELMg-yZyndJG7xpXUTnWr3pp6Mxi48P9SzFbMbIeXxKkOTF2hMuANPBlYfWlffMlgH1NTeCmLfCTWzDKp6cS0jcWlPfplMikUWRQ-oYi4hC-KnVuRIqIDsRdSnyNbIVgyb2mYrq9rVWhm~BueepaTXX2b1TJodSTlMMjwuqEBGAz4XxDy3Z~Aufda-Z-slOJrO7021EE-S0ZQzBX2C74tXlOgfVT7YV8QPayHr5riUPhclrpIL5SSg39nusPm5HyV-KrCxa4HNdhKdEWotkXIUAfxf5ZSzz8Vb5dDkQpUC6VytyNVGCmUR-qIqKTxEg__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA" width="100%" />
-        </Slide>
-
         <Slide transition={["zoom", "slide"]}>
           <Heading>Compilation</Heading>
 
@@ -543,9 +538,10 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["zoom", "slide"]}>
           <Heading size="1.3em">I recomend to play with rust or webassembly and listen to good music!!!!</Heading>
-
           <List>
-            <Link textColor="#fff" href="http://rain.in.ua/son/">Обійми Дощу - Сон</Link>
+            <Link textColor="#fff" href="http://rain.in.ua/son/">
+              <Image src={images.lq} />Обійми Дощу - Сон
+            </Link>
           </List>
         </Slide>
 
